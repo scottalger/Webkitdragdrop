@@ -3,7 +3,7 @@
 This is a fork of the original webkitdragdrop library by Tommaso Buvoli. My (cybear) modifications to it are: 
 
 * Give element(s) as argument when running callback functions.
-* Removed line break before curly braces. 
+* Used textmate's bundle Javascript's Reformat Document to tidy up a little.
 
 ---
 
