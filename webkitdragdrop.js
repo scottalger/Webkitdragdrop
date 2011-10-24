@@ -314,7 +314,7 @@ var webkit_droppables = function()
 				{
 					webkit_tools.removeClassName(r,p.hoverClass);
 				}
-				p.onOut();
+				p.onOut(draggableRoot);
 				this.lastIndex = null;
 				this.lastOutput = false;
 			}
@@ -332,7 +332,7 @@ var webkit_droppables = function()
 					{
 						webkit_tools.addClassName(r,p.hoverClass);
 					}
-					p.onOver();				
+					p.onOver(draggableRoot);
 					this.lastIndex = index;
 					this.lastOutput = true;	
 				}
@@ -462,7 +462,7 @@ var webkit_draggable = function(r, ip)
 		//boost zIndex
 		rs.zIndex = p.zIndex;
 		webkit_drop.prepare();
-		p.onStart();
+		p.onStart(r);
 	}
 	
 	this.touchMove = function(event)
@@ -519,7 +519,7 @@ var webkit_draggable = function(r, ip)
 		}
 		
 		r.style.zIndex = this.p.z;
-		this.p.onEnd();
+		this.p.onEnd(r);
 	}
 	
 	this.getPosition = function()
