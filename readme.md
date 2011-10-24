@@ -1,7 +1,9 @@
 #Webkitdragdrop
 
-This is a fork of the original webkitdragdrop library by Tommaso Buvoli. I've added it to my (cybear) repos on github to make some modifications to it. 
+This is a fork of the original webkitdragdrop library by Tommaso Buvoli. My (cybear) modifications to it are: 
 
+* Give element(s) as argument when running callback functions.
+* Removed line break before curly braces. 
 
 ---
 
